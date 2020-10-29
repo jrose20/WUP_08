@@ -32,10 +32,21 @@ new <- data.frame(NECK=c(17,22,26))
 predict(simp,new)
 predict(simp,new,se.fit=TRUE)
 ```
+
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
+```{r}
+codeblock <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(codeblock)
+summary.lm(codeblock)
+```
+
+According to the two variables of LENGTH and WEIGHT the Adjusted R-squared number is 0.7423 which slightly lower than that of LENGTH and NECK which is at 0.7476.  
+
 ```{r}
 pairs(bears)
 ```
+
 
 ```{r}
 fix <- lm(LENGTH~HEADLEN,data=bears)
