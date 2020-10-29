@@ -44,4 +44,4 @@ abline(headlen)
 summary.lm(headlen)
 ```
 
-A better variable as apposed to LENGTH and NECK we can say that LENGTH and HEADLEN illustrate a better variable because it has a larger Adjusted R Squared. The R squared value for LENGTH and NECK was .7476, the adjusted R-squared value for LENGTH and HEADLEN was .8434. 
+A better variable as opposed to LENGTH and NECK we can say that LENGTH and HEADLEN illustrate a better variable because it has a larger Adjusted R Squared. The R squared value for LENGTH and NECK was .7476, the adjusted R-squared value for LENGTH and HEADLEN was .8434. 
