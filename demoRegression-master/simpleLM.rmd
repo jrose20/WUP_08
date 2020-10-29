@@ -38,10 +38,10 @@ pairs(bears)
 ```
 
 ```{r}
-headlen <- lm(LENGTH~HEADLEN,data=bears)
+fix <- lm(LENGTH~HEADLEN,data=bears)
 plot(LENGTH~HEADLEN,data=bears)
-abline(headlen)
-summary.lm(headlen)
+abline(fix)
+summary.lm(fix)
 ```
 
 A better variable as opposed to LENGTH and NECK we can say that LENGTH and HEADLEN illustrate a better variable because it has a larger Adjusted R Squared. The R squared value for LENGTH and NECK was .7476, the adjusted R-squared value for LENGTH and HEADLEN was .8434. 
